@@ -23,16 +23,13 @@ public class SpawnCoins : MonoBehaviour
     }
 
     private IEnumerator CreateCoin()
-    {        
-        if(_currentSpawnPoint == _spawnPoint.childCount)
+    {
+        while(_currentSpawnPoint != _spawnPoint.childCount)
         {
-            yield break;
+            Instantiate(_coin, _spawnPoints[_currentSpawnPoint]);
+            _currentSpawnPoint++;
+
+            yield return new WaitForSeconds(2f);
         }
-
-        Instantiate(_coin, _spawnPoints[_currentSpawnPoint]);
-        _currentSpawnPoint++;
-        Debug.Log(_currentSpawnPoint);
-
-        yield return new WaitForSeconds(2f);
     }
 }
