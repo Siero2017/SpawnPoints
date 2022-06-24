@@ -123,25 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &35535295 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4840162893343811365, guid: f0ea3c9b21f10314ebfb75497449c805, type: 3}
-  m_PrefabInstance: {fileID: 1173546264}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &35535296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35535295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deb1893cf785e2b42bc8e1ebdc6c62bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spawnPoint: {fileID: 63382609}
-  _coin: {fileID: 4840162893343811365, guid: f0ea3c9b21f10314ebfb75497449c805, type: 3}
 --- !u!1 &63382608
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 63382609}
+  - component: {fileID: 63382610}
   m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
@@ -176,6 +158,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63382610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63382608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb1893cf785e2b42bc8e1ebdc6c62bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnPoint: {fileID: 63382609}
+  _coin: {fileID: 4840162893343811365, guid: f0ea3c9b21f10314ebfb75497449c805, type: 3}
 --- !u!1 &309652849
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +184,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawnpoint (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -301,7 +297,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawnpoint (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -388,7 +384,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawnpoint (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -418,7 +414,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawnpoint (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
